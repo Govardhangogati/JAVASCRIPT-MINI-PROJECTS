@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DICE GAME</title>
+        <style>
+            .box-container{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 50px;
+                margin: 50px auto;
+            }
+            .box{
+                width: 150px;
+                height: 150px;
+                background-color: red;
+                color: white;
+                border-radius: 10px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                font-size: 80px;
+            }
+            #btn{
+                width: 200px;
+                border: none;
+                height: 40px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                margin: 50px auto;
+                background-color: yellowgreen;
+                border-radius: 10px;
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            #result{
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                background-color: green;
+                place-content: center;
+                text-align: center;
+                font-size: 80px;
+                right: 300px;
+                border-radius: 10px;
+                color: white;
+            }
+            @keyframes spin{
+                from {transform: rotate(0deg);}
+                to {transform: rotate(1440deg);}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box-container">
+            <div class="box" id="box1">
+                <div class="number">0</div>
+            </div>
+            <div class="box" id="box2">
+                <div class="number">0</div>
+            </div>
+            <div id="result"></div>
+        </div>
+        <button id="btn">ROLL DICE</button>
+        <script src="./app.js"></script>
+    </body>
+</html>

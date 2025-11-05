@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(72, 71, 71);
+            position: relative;
+        }
+        .container{
+            width: 300px;
+            border: 1px solid;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            margin: 50px auto;
+            padding: 30px;
+            font-size: 18px;
+            background-color: whitesmoke;
+        }
+        label{
+            color: blue;
+        }
+        .input{
+            width: 250px;
+            height: 20px;
+            border-radius: 5px;
+            background-color: rgb(57, 56, 56);
+            border: none;
+            color: rgb(216, 157, 157);
+            padding: 10px;
+            font-size: 15px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;;
+            padding: 0;
+        }
+        li{
+            width: 250px;
+            height: 30px;
+            background-color: rgb(110, 107, 107);
+            border-radius: 5px;
+            margin: 20px;
+            margin-left: 0;
+            padding: 10px;
+            font-size: 18px;
+        }
+        #btn{
+            width: 70px;
+            height: 25px;
+            border-radius: 5px;
+        }
+        #btn.active{
+            border: none;
+            background-color: blue;
+            color: white;
+            width: 70px;
+            height: 25px;
+            border-radius: 5px;
+        }
+        #span1{
+            display: none;
+            
+        }
+        #span1.activate{
+            display: block;
+            position: absolute;
+            height: 60px;
+            width: 300px;
+            border-color: rgb(169, 17, 17);
+            border-width: 3px ;
+            border-style: solid;
+            background-color: rgb(172, 105, 105);
+            color: rgb(169, 17, 17);
+            font-size: 22px;
+            /* font-weight: bold; */
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding: 10px;
+            top: 0;
+            right: 0;
+            
+        }
+        #span2{
+            display: none;
+            
+        }
+        #span2.activate1{
+            display: block;
+            position: absolute;
+            height: 60px;
+            width: 300px;
+            border-color: green;
+            border-width: 3px ;
+            border-style: solid;
+            background-color: rgb(131, 157, 131);
+            color: green;
+            font-size: 22px;
+            /* font-weight: bold; */
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding: 10px;
+            top: 0;
+            right: 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <label for="uname">UserName</label><br>
+            <input class="input" id="uname" type="text" placeholder="Enter userName" required> <br><br>
+            <label for="email">Email</label><br>
+            <input class="input" id="email" type="email" placeholder="Enter Email"><br><br>
+            <input type="checkbox" id="cb"> I agree to the terms and conditions <br><br>
+            <button id="btn" disabled>Submit</button>
+        </form>
+        <ul id="mails"></ul>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

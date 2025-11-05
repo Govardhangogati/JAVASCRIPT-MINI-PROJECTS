@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        margin: 0px;
+       }
+       header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #333;
+        color: white;
+        padding: 15px 20px;
+        position: relative;
+       }
+       .logo{
+        font-size: 34px;
+        font-weight: bold;
+       }
+       nav{
+        display: flex;
+        gap: 20px;
+       }
+       nav a{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+       }
+       .hamburger{
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+       }
+       .hamburger div{
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: white;
+       }
+       @media(max-width:768px){
+        nav{
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #333;
+            position: absolute;
+            top: 60px;
+            left: 0px;
+        }
+        nav a{
+            padding: 10px 20px;
+            border-top: 1px solid rgb(112, 110, 110);
+        }
+        .hamburger{
+            display: block;
+        }
+        nav.active{
+            display: flex;
+        }
+        
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">logo</div>
+        <nav id="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <script src="./app.js"></script>
+</body>
+</html>

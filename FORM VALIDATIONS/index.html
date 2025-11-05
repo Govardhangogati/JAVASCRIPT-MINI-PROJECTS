@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligned Form</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;  
+            align-items: center;      
+            background: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 8px;
+            width: 220px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form id="form" >
+            <div class="form-row">
+                <label for="uname">User Name:</label>
+                <input type="text" name="uname" id="uname">
+            </div>
+
+            <div class="form-row">
+                <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div class="form-row">
+                <label for="mobile">Mobile Number:</label>
+                <input type="number" name="mobile" id="mobile">
+            </div>
+            <div class="form-row">
+                <label for="pancard">Pan Number:</label>
+                <input type="text" name="pancard" id="pancard">
+            </div>
+            <div class="form-row">
+                <label for="adharcard">Adhar Number:</label>
+                <input type="text" name="adharcard" id="adharcard">
+            </div>
+            <button type="submit" id="submit">submit</button>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+    
+</body> 
+</html>

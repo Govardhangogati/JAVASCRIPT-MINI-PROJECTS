@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+        .container #netflix{
+            width: 100%;
+            height: 100%;
+        }
+        .input-search{
+            position: absolute;
+            left: 500px;
+            top: 50px;
+        }
+        #input{
+            width: 400px;
+            height: 30px;
+            font-size: 20px;
+            padding: 10px;
+            border: none;
+        }
+        #btn{
+            width: 100px;
+            height: 50px;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: red;
+            border: none;
+        }
+        #btn:hover{
+            background-color: rgb(171, 11, 11);
+        }
+
+        #card{
+            position: absolute;
+            text-align: center;
+            width: 300px;
+            padding: 10px;
+            background-color: white;
+            top: 120px;
+            left: 550px;
+        }
+        #not-found{
+            position: absolute;
+            text-align: center;
+            width: auto;
+            padding: 10px;
+            font-size: 30px;
+            color: rgb(228, 12, 12);
+            /* background-color: white; */
+            top: 120px;
+            left: 550px;
+        }
+
+    
+
+        #card img {
+            width: 100%;
+            /* height: auto; */
+            border-radius: 10px;
+            transform: rotateY(360deg);
+            transition: transform 1s;
+            backface-visibility: hidden;
+        }
+
+        #card.show img {
+            transform: rotateY(0deg);
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="netflix" src="../assets/netflix.jpg" alt="netflix">
+        <div class="input-search">
+            <input type="text" placeholder="Search" id="input">
+            <button id="btn" onclick="movie()">Search</button>
+        </div>
+        <div id="card-container"></div>
+    </div>
+    <script src="./app.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        #text{
+            font-size: 22px;
+            background-color: white;
+            /* padding: 10px; */
+            border-radius: 5px;
+        }
+        #author{
+            font-size: 30px;
+            background-color: bisque;
+        }
+        button{
+            font-size: 25px;
+            background-color: rgb(146, 205, 28);
+            border: none;
+            border-radius: 25px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RANDOM QUOTATIONS GENERATOR</h1>
+        <div id="text"></div>
+        <div id="author"></div>
+        <button id="btn" onclick="randomGenerator()">click here to change the quotation</button>
+    </div>
+   <script src="./app.js"></script> 
+</body>
+</html>
