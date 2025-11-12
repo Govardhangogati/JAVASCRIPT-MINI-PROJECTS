@@ -1,0 +1,99 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: rgb(208, 235, 235);
+    }
+    .task-box,.input-box{
+      width: 400px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      padding: 10px;
+      margin: 20px auto;
+    }
+    .emptylist{
+      text-align: center;
+    }
+    .emptylist img{
+      width: 300px;
+    }
+    .input-box{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    #name{
+      border: none;
+      font-size: 20px;
+    }
+    #desc{
+      border: none;
+      font-size: 15px;
+    }
+    .date-btn{
+      display: flex;
+      justify-content: space-between;
+    }
+    .date-btn #btn{
+      width: 80px;
+      background-color: blueviolet;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .date-btn #btn:hover{
+      background-color: rgb(163, 98, 224);
+    }
+    .task{
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgb(217, 212, 212);
+      padding-bottom: 10px;
+    }
+    .text{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .completed{
+      background-color: rgb(170, 228, 228);
+    }
+    .date{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="task-box">
+    <h2>My Todo's</h2>
+    <div class="emptylist" id="task-list">
+      <img src="https://img.freepik.com/free-vector/hand-drawn-no-data-concept_52683-127823.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+      <h3>No Tasks Today</h3>
+      <p>No Tasks Today.Start Adding New Tasks </p>
+    </div>
+  </div>
+  <div class="input-box">
+      <input type="text" id="name" placeholder="Task Name">
+      <input type="text" id="desc" placeholder="Description">
+      <div class="date-btn">
+        <input type="datetime-local" id="date" placeholder="Due Date">
+        <button id="btn" onclick="addTask()">Add Task</button>
+      </div>
+  </div>
+  <script src="./app.js"></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(184, 165, 165);
+        }
+        .container{
+            display: flex;
+            gap: 10px;
+        }
+        .product-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            background-color: rgb(235, 233, 233);
+            padding: 50px;
+            width: 1050px;
+            margin: 10px;
+
+        }
+        #card{
+            width: 250px;
+            text-align: center;
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            height: 400px;
+        }
+        img{
+            width: 100%;
+            height: 200px;
+        }
+        .sidebar{
+            width: 300px;
+            height: 600px;
+            background-color: rgb(240, 238, 238);
+            margin: 10px;
+            padding: 20px;
+        }
+        #data{
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <label>price range: <br><br>
+                <input id="typerange" type="range" min="10000" max="100000" step="100">
+                <span id="rangevalue">50000</span>
+            </label>
+            <br><br>
+            <label>
+                <input id="fourstar" type="checkbox"><span>4 star & above</span>
+            </label>
+            <br><br>
+            <label>
+                <input id="threestar" type="checkbox"><span>3 star & above</span>
+            </label>
+            <br><br>
+            <label>
+                <input id="twostar" type="checkbox"><span>2 star & above</span>
+            </label>
+            <br><br>
+            <label>
+                <input id="onestar" type="checkbox"><span>1 star & above</span>
+            </label>
+            <br><br>
+        </div>
+        <div id="product-container" class="product-container"></div>
+    </div>
+    <script src="./app.js"></script>
+    
+</body>
+</html>

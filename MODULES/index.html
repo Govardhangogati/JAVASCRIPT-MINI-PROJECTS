@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TechNova</div>
+        <input type="text" placeholder="search" id="input" oninput="filterData()">
+        <div class="nav-links" id="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+            <a href="./cart.html">CART<sup id="cart">0</sup></a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    
+    <div class="card-container" id="card-container"></div>
+
+    <script type="module" src="./main.js"></script>
+    
+</body>
+</html>

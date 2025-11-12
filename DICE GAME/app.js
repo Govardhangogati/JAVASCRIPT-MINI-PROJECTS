@@ -22,6 +22,8 @@ let btn=document.getElementById('btn');
 btn.addEventListener('click',()=>{
     let box1=document.getElementById('box1');
     let box2=document.getElementById('box2');
+    let audio=document.getElementById('rollSound')
+    audio.play()
     result.style.display='none';
     [box1,box2].forEach(box => {
         box.innerHTML='';

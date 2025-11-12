@@ -1,0 +1,130 @@
+body{
+    margin: 0px;
+    background-color: rgb(208, 109, 109);
+   }
+header{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background-color: orangered;
+ color: white;
+ position: relative;
+ height: 40px;
+ padding: 10px;
+}
+#logo{
+ font-size: 30px;
+ font-weight: bold;
+}
+
+.nav-links a{
+ color: white;
+ text-decoration: none;
+ font-size: 20px;
+ margin: 20px;
+}
+.hamburger{
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+}
+.hamburger div{
+ width: 25px;
+ height: 3px;
+ margin: 5px;
+ background-color: white;
+}
+input{
+ width: 400px;
+ height: 20px;
+ border-radius: 30px;
+ font-size: 18px;
+ padding: 10px;
+ border: none;
+ outline: none;
+}
+.container{
+    /* background-color: whitesmoke; */
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+}
+.sidebar{
+    width: 400px;
+    background-color: white;
+    /* height: 1000px; */
+    padding: 10px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    font-size: 18px;
+}
+li{
+    width: 200px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10PX;
+}
+li:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 1200px;
+
+}
+#card{
+    width: 300px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    /* height: 400px; */
+}
+#card img{
+    width: 100%;
+    height: 300px;
+    /* height: 200px; */
+}
+
+#emptycart{
+    margin-left: 550px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#emptycart img{
+    width: 400px;
+    border-radius: 50%;
+}
+#emptycart h2{      
+    font-size: 60px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(214, 65, 11);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+}
+button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+

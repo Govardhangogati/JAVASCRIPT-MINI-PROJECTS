@@ -25,8 +25,8 @@ async function movie() {
   card_container.innerHTML = movie;
 
  
-  let card = document.getElementById('card');
-  setTimeout(() => {
-    card.classList.add('show');
-  }, 100); 
+  // let card = document.getElementById('card');
+  // setTimeout(() => {
+  //   card.classList.add('show');
+  // }, 100); 
 }

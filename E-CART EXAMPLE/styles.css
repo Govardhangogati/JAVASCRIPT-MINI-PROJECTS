@@ -1,0 +1,133 @@
+body{
+            background-color: rgb(212, 176, 176);
+        }
+        header{
+            display: flex;
+            margin: 0;
+            background-color: rgb(163, 90, 90);
+            height: 50px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            position: relative;
+        }
+        .logo{
+            font-family: Copperplate, Papyrus, fantasy;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        input{
+            width: 400px;
+            height: 10px;
+            border-radius: 20px;
+            padding: 10px;
+            border: none;
+        }
+        
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            margin: 20px;
+        }
+        .hamburger div{
+            width: 25px;
+            height: 3px;
+            margin: 5px;
+            background-color: white;
+        }
+        .hamburger{
+            cursor: pointer;
+            display: none;
+        }
+        @media (max-width:768px){
+            .nav-links{
+                display: none;
+                width: 100%;
+                position: absolute;
+                flex-direction: column;
+                background-color: black;
+                
+                left: 0;
+                top: 70px;
+                
+            }
+            .nav-links a{
+                border-top: 1px solid rgb(158, 151, 151);
+                padding: 10px 20px;
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+            .hamburger{
+                display: block;
+            }
+            .nav-links.active{
+                display: flex;
+            }
+        }
+        .container{
+            display: flex;
+            background-color: whitesmoke;
+            margin-top: 20px;
+            gap: 40px;
+            background-color: rgb(212, 176, 176);
+        }
+        .sidebar{
+            width: 350px;
+            height: 800px;
+            padding: 20px;
+            background-color: white;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        li{
+            padding: 10px;
+            border-radius: 10px;
+            width: 200px;
+            cursor: pointer;
+            font-size: 17px;
+
+        }
+        li:hover{
+            background-color: rgb(222, 139, 139);
+            color: white;
+        }
+        .product-container{
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 10px;
+        }
+        #card{
+            width: 200px;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 20px;
+            height: 350px;
+        }
+        img{
+            width: 100%;
+            height: 200px;
+        }
+        sup{
+            padding: 2px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        #btn{
+            border: none;
+            border-radius: 10px;
+            color: white;
+            height: 30px;
+            background-color: rgb(225, 61, 61);
+            cursor: pointer;
+        }
+        #total-sum{
+            font-size: 40px;
+        }

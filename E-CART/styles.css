@@ -1,0 +1,45 @@
+body{
+        margin: 0px;
+        background-color: whitesmoke;
+       }
+       header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #333;
+        color: white;
+        padding: 15px 20px;
+        position: relative;
+       }
+       .logo{
+        font-size: 34px;
+        font-weight: bold;
+       }
+       nav{
+        display: flex;
+        gap: 20px;
+       }
+       nav a{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+       }
+       .hamburger{
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+       }
+       .hamburger div{
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: white;
+       }
+
+       input{
+        width: 500px;
+        height: 30px;
+        border-radius: 30px;
+        font-size: 18px;
+        padding: 10px;
+       }

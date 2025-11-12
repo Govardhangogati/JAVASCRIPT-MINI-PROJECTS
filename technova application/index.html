@@ -8,13 +8,13 @@
 </head>
 <body>
     <header>
-        <div class="logo">TechNova</div>
-        <input type="text" placeholder="search" id="input" oninput="filterproducts()">
+        <div id="logo">TECHNOVA</div>
+        <div><input type="text" placeholder="Search" id="input" oninput="filterProducts()"></div>
         <div class="nav-links" id="nav-links">
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">CONTACT</a>
-            <a href="#">CART<sup id="cart">0</sup></a>
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">CONTACT</a>
+            <a href="./cart.html">CART<sup id="cart">0</sup></a>
         </div>
         <div class="hamburger" id="hamburger">
             <div></div>
@@ -24,18 +24,16 @@
     </header>
     <div class="container">
         <div class="sidebar">
-            <h1>Categories</h1>
+            <h1>CATEGORIES</h1>
             <ul>
-                <li onclick="filterdata('all')">All</li>
-                <li onclick="filterdata('mobiles')">MOBILES</li>
-                <li onclick="filterdata('televisions')">TELEVISIONS</li>
-                <li onclick="filterdata('laptops')">LAPTOPS</li>
-                <li onclick="filterdata('headsets')">HEADSETS</li>
+                <li onclick="filtercategory('mobiles')">MOBILES</li>
+                <li onclick="filtercategory('laptops')">LAPTOPS</li>
+                <li onclick="filtercategory('headsets')">HEADSETS</li>
+                <li onclick="filtercategory('televisions')">TELEVISIONS</li>
             </ul>
         </div>
         <div class="product-container" id="product-container"></div>
     </div>
-    <div class="total-sum" id="total-sum"></div>
     <script type="module" src="./main.js"></script>
 </body>
 </html>
